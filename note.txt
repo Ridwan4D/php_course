@@ -1,0 +1,96 @@
+------------------------------------- first part [basic] start -------------------------------------
+<?php
+
+echo "I love Chocolate <br>";
+echo "It's really help to relief stress";
+?>
+------------------------------------- first part end -------------------------------------
+
+------------------------------------- second part [variable basics] start -------------------------------------
+<?php
+
+// string variable 
+$name = "Ridwanul Islam";
+
+// print variable
+echo $name . "<br>";
+
+// print with text
+echo "My name is {$name}";
+
+// integer number variable 
+$age = 20;
+echo "<br> I'm " . $age . "<br>";
+
+// floats number variable 
+$gpa = 3.5;
+echo "Your gap is {$gpa} <br>";
+
+$price = 3.5;
+echo "Chocolate price is \${$price} <br>";
+
+// boolean variable
+$online  = true;
+
+if ($online) {
+    echo "He is in online";
+}
+
+
+// do some complex
+
+$quantity = 5;
+$food = "Chocolate";
+
+// null variable 
+$total = null;
+
+echo "<br> I have order {$quantity} x {$food}s";
+
+// assign value in null
+$total = $quantity * $price;
+echo "<br> My total is: \${$total}";
+?>
+------------------------------------- second part end -------------------------------------
+
+------------------------------------- third part [math metical operators] start -------------------------------------
+<?php
+
+// arithmetic operators
+$x = 10;
+$y = 2;
+$z = null;
+
+// $z = $x + $y; //addition  
+
+// $z = $x - $y; //subtraction  
+
+// $z = $x * $y; //multiplied  
+
+// $z = $x / $y; //divide
+
+// $z = $x ** $y; // to the power
+
+// $z = $x ** $y; // to the power
+
+$z = $x % $y; // modula operator, it's provide the remaining number after divide
+echo "value of z: {$z} <br>";
+
+
+
+// increment / decrement operators
+
+$counter = 10;
+
+// $counter++; // increment 1
+// $counter--; // decrement 1
+// $counter += 5; // increment more the one
+$counter -= 5; // decrement more the one
+
+echo "value of counter: {$counter} <br>";
+?>
+------------------------------------- third part end -------------------------------------
+
+------------------------------------- fourth part [get post variable (special)] start -------------------------------------
+
+------------------------------------- fourth part end -------------------------------------
