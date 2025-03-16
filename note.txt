@@ -1,4 +1,4 @@
-------------------------------------- first part [basic] start -------------------------------------
+ ------------------------------------- first part [basic] start -------------------------------------
 <?php
 
 echo "I love Chocolate <br>";
@@ -122,3 +122,103 @@ echo "value of counter: {$counter} <br>";
 echo $_POST["name"];
 ?>
 ------------------------------------- fourth part end -------------------------------------
+
+-------------------------------------fifth part [some math functions] start -------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="index.php" method="post">
+        <label for="x">x: </label>
+        <input type="text" name="x">
+        <br>
+        <label for="y">y: </label>
+        <input type="text" name="y">
+        <br>
+        <label for="z">z: </label>
+        <input type="text" name="z">
+        <br>
+        <input type="submit" value="Total">
+    </form>
+</body>
+
+</html>
+
+
+<?php
+
+$x = $_POST["x"];
+$y = $_POST["y"];
+$z = $_POST["z"];
+$total = null;
+
+// $total = abs($x); // this function return an absolute positive number;
+// $total = round($x); // round returns integer number;
+// $total = ceil($x); // ceil returns upper side integer number;
+// $total = floor($x); // floor returns down side integer number;
+// $total = sqrt($x); // square root
+// $total = pow($x, $y); // power
+// $total = max($x, $y, $z); // get max
+// $total = min($x, $y, $z); // get min
+// $total = pi(); // get pi
+$total = rand(); // get random number. can set min and max value, example: (4,9999)
+
+
+
+echo $total;
+
+?>
+-------------------------------------fifth part end -------------------------------------
+
+===================================== sixth part [if else statement] =====================================
+===================================== seventh part [logical operator] =====================================
+===================================== 8th part [switch case operator] =====================================
+===================================== 9th part [for loop concept] =====================================
+
+------------------------------------- 10th part [array] start -------------------------------------
+<?php
+
+$foods = ["apple", "orange", "papaya", "mango"];
+
+// $foods[0] = "coconut"; // change an index value
+// array_push($foods, "banana"); // add element at the last of the array;
+// array_pop($foods); // remove the last element of the array;
+// array_shift($foods); // remove the first element of the array;
+// array_unshift($foods, "watermelon"); // add element at the first of the array;
+$reverseFoods = array_reverse($foods); // reverse the direction
+
+
+
+foreach ($foods as $food) {
+    echo "{$food} <br>";
+}
+echo "<br>";
+foreach ($reverseFoods as $food) {
+    echo "{$food} <br>";
+}
+------------------------------------- 10th part end -------------------------------------
+
+------------------------------------- 11th part [associative array] start -------------------------------------
+<?php
+
+// associative array = an array made of key => value pairs
+
+$capitals = array(
+    "USA" => "Washington D.C. ",
+    "Japan" => "Tokiyo",
+    "BD" => "Dhaka",
+    "Saudi Arabia" => "Riyad"
+);
+
+// echo $capitals['BD'];
+
+foreach ($capitals as $key => $value) {
+    echo "{$key} => {$value} <br>";
+}
+------------------------------------- 11th part end -------------------------------------
